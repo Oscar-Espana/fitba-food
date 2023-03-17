@@ -51,7 +51,7 @@ const Hero = () => {
             </Typography>
           </Typography>
           <Typography variant="body1" color="white">
-            Alimentarse de forma saludable nunca fue tan rico
+            Alimentarse de forma saludable nunca fue tan delicioso
           </Typography>
         </Container>
       </Box>

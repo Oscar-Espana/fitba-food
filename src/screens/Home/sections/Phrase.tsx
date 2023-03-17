@@ -26,6 +26,10 @@ const Phrase = () => {
               sx={{
                 fontSize: "32px",
                 letterSpacing: "-0.5px",
+                textAlign: {
+                  xs: "center",
+                  md: "left",
+                },
               }}
             >
               {`"Que la comida sea tu medicina y la medicina sea tu comida."`}

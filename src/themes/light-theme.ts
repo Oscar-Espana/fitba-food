@@ -8,6 +8,9 @@ const lightThemeOptions: ThemeOptions = {
       fontSize: "88px",
       fontWeight: 400,
       color: "#F2B410",
+      "@media (max-width:600px)": {
+        fontSize: "70px",
+      },
     },
     h2: {
       fontFamily: "var(--Dancing_Script)",
@@ -18,7 +21,7 @@ const lightThemeOptions: ThemeOptions = {
     },
     h3: {
       fontFamily: "var(--Poppins)",
-      fontSize: "52px",
+      fontSize: "49px",
       fontWeight: 600,
     },
     subtitle1: {
