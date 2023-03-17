@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 import Hero from "./sections/Hero";
 import MenuProducts from "./sections/MenuProducts";
 import Phrase from "./sections/Phrase";
@@ -9,6 +10,7 @@ const Home = () => {
       <Hero />
       <Phrase />
       <MenuProducts />
+      <Footer />
     </>
   );
 };
