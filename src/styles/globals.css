@@ -2,10 +2,19 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: var(--Caudex), "sans-serif", "Roboto";
+  font-family: var(--Poppins), "sans-serif", "Roboto";
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.card-product {
+  transition: transform 0.4s ease-in-out;
+}
+
+.card-product:hover {
+  transform: scale(1.2);
+  transition: transform 0.4s ease-in-out;
 }
