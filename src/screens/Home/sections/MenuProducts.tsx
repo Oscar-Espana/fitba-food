@@ -66,7 +66,7 @@ const products = [
     name: "French toast",
   },
   {
-    url: "/images/lasaña-fit.jpg",
+    url: "/images/lasana-fit.jpg",
     name: "Lasaña fit",
   },
   {
