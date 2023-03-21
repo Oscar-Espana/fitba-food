@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Container, Typography } from "@mui/material";
 import Link from "next/link";
 import { SocialIcon } from "react-social-icons";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -21,36 +22,22 @@ const Footer = () => {
           gap: 1,
         }}
       >
-        <Typography
-          component="h2"
-          fontFamily="var(--Poppins)"
-          sx={{ fontSize: 52, mb: 3 }}
-        >
-          Fitba
-          <Typography
-            component={"span"}
-            variant="h2"
-            fontWeight="700"
-            sx={{ fontSize: 52 }}
-          >
-            Food
-          </Typography>
-        </Typography>
-        <Link href="mailto:test@gmail.com">test@fitbafoo.com</Link>
-        <Link href="tel:+593968345938">0968345938</Link>
-        <Typography>
+        <Image
+          src="/icons/logo-fitba-food.svg"
+          alt="Logo Fitbafood"
+          width={250}
+          height={225}
+        />
+
+        <Link href="mailto:sebas2240@live.com">sebas2240@live.com</Link>
+        <Link href="tel:+593968345938">+593 96 834 5938</Link>
+        <Typography align="center">
           Espinoza de los Monteros y Juan Pablo Segundo (Esquina)
         </Typography>
         <Box>
           <SocialIcon
             target={"_blank"}
-            url="https://www.instagram.com"
-            fgColor="gray"
-            bgColor="transparent"
-          />
-          <SocialIcon
-            target={"_blank"}
-            url="https://www.facebook.com"
+            url="https://www.instagram.com/fitbafood/?igshid=YWVjMmZiZjg%3D"
             fgColor="gray"
             bgColor="transparent"
           />
