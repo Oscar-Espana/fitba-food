@@ -8,7 +8,11 @@ const Phrase = () => {
     <Box
       component={"section"}
       sx={{
-        py: 13,
+        pt: {
+          xs: 8,
+          sm: 10,
+          md: 13,
+        },
         pb: 0,
       }}
     >
@@ -48,6 +52,7 @@ const Phrase = () => {
               }}
             >
               <Image
+                quality={85}
                 className="healty-food"
                 src="/images/comida-saludable.jpg"
                 alt="pizzas"

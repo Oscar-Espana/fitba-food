@@ -18,11 +18,17 @@ const lightThemeOptions: ThemeOptions = {
       fontWeight: 700,
       color: "#F2B410",
       lineHeight: 0.95,
+      "@media (max-width:600px)": {
+        fontSize: "62px",
+      },
     },
     h3: {
       fontFamily: "var(--Poppins)",
       fontSize: "49px",
       fontWeight: 600,
+      "@media (max-width:600px)": {
+        fontSize: "42px",
+      },
     },
     subtitle1: {
       fontFamily: "var(--Poppins)",

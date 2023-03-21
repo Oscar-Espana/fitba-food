@@ -6,7 +6,11 @@ const Menu = () => {
   return (
     <Box
       sx={{
-        py: 13,
+        py: {
+          xs: 8,
+          sm: 10,
+          md: 13,
+        },
       }}
     >
       <Container>
@@ -42,14 +46,6 @@ export default Menu;
 
 const products = [
   {
-    url: "/images/alitas.jpg",
-    name: "Alitas",
-  },
-  {
-    url: "/images/bolon-fit.jpg",
-    name: "Bolón fit",
-  },
-  {
     url: "/images/bowl-cereales-fit.jpg",
     name: "Bowl de cererales fit",
   },
@@ -66,6 +62,10 @@ const products = [
     name: "French toast",
   },
   {
+    url: "/images/bolon-fit.jpg",
+    name: "Bolón fit",
+  },
+  {
     url: "/images/lasana-fit.jpg",
     name: "Lasaña fit",
   },
@@ -73,10 +73,12 @@ const products = [
     url: "/images/majado-fit.jpg",
     name: "Majado fit",
   },
+
   {
     url: "/images/nachos-fit.jpg",
     name: "Nachos fit",
   },
+
   {
     url: "/images/pizza-fit.jpg",
     name: "Pizza fit",
@@ -84,5 +86,9 @@ const products = [
   {
     url: "/images/tacos-fit.jpg",
     name: "Tacos fit",
+  },
+  {
+    url: "/images/alitas.jpg",
+    name: "Alitas",
   },
 ];
