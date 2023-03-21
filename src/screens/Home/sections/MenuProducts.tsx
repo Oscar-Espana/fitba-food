@@ -42,23 +42,47 @@ export default Menu;
 
 const products = [
   {
-    url: "/images/pizzas-fit.jpg",
+    url: "/images/alitas.jpg",
+    name: "Alitas",
+  },
+  {
+    url: "/images/bolon-fit.jpg",
+    name: "Bolón fit",
+  },
+  {
+    url: "/images/bowl-cereales-fit.jpg",
+    name: "Bowl de cererales fit",
+  },
+  {
+    url: "/images/brownie-fit.jpg",
+    name: "Brownie fit",
+  },
+  {
+    url: "/images/burritos-fit.jpg",
+    name: "Burritos fit",
+  },
+  {
+    url: "/images/french-toast.jpg",
+    name: "French toast",
+  },
+  {
+    url: "/images/lasaña-fit.jpg",
+    name: "Lasaña fit",
+  },
+  {
+    url: "/images/majado-fit.jpg",
+    name: "Majado fit",
+  },
+  {
+    url: "/images/nachos-fit.jpg",
+    name: "Nachos fit",
+  },
+  {
+    url: "/images/pizza-fit.jpg",
     name: "Pizza fit",
   },
   {
-    url: "/images/postre-chocolate.jpg",
-    name: "Postre de chocolate ",
-  },
-  {
-    url: "/images/postre-fresas.jpg",
-    name: "Postre de fresas",
-  },
-  {
     url: "/images/tacos-fit.jpg",
-    name: "Tacos al Pastor",
-  },
-  {
-    url: "/images/tacos-guacamole.jpg",
-    name: "Tacos de la casa",
+    name: "Tacos fit",
   },
 ];

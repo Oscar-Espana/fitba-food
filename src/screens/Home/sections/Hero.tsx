@@ -12,7 +12,7 @@ const Hero = () => {
       }}
     >
       <Image
-        src="/images/tacos-guacamole.jpg"
+        src="/images/nachos-fit.jpg"
         alt="Pizzas FIT"
         fill
         style={{
