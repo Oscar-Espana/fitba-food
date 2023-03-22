@@ -47,8 +47,14 @@ const lightThemeOptions: ThemeOptions = {
     },
     body2: {
       fontFamily: "var(--Poppins)",
-      fontSize: "17px",
+      fontSize: "16px",
       fontWeight: 400,
+    },
+  },
+  palette: {
+    mode: "light",
+    primary: {
+      main: "#F2B410",
     },
   },
 };
