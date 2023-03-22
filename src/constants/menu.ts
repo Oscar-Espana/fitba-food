@@ -24,7 +24,7 @@ export const menu: IProduct[] = [
     categories: [breakfastsCategory, bowlsCategory],
   },
   {
-    url: "/images/brownie-fit.jpg",
+    url: "/images/brownie-fitba.jpg",
     name: "Brownie fit",
     categories: [dessertFitCategory],
   },

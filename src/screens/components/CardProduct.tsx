@@ -27,7 +27,6 @@ const CardProduct: FC<Props> = ({ url, name }) => {
         }}
       >
         <Image
-          className="card-product"
           src={url}
           alt={name}
           fill
