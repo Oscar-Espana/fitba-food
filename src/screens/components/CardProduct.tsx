@@ -1,3 +1,4 @@
+import { currency } from "@/utils";
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 import React, { FC } from "react";
@@ -5,14 +6,15 @@ import React, { FC } from "react";
 interface Props {
   url: string;
   name: string;
+  price: number;
 }
-const CardProduct: FC<Props> = ({ url, name }) => {
+
+const CardProduct: FC<Props> = ({ url, name, price }) => {
   return (
     <Box
       aria-label="card-product"
       sx={{
         background: "#fafafa",
-        pb: 2,
       }}
     >
       <Box
@@ -21,7 +23,7 @@ const CardProduct: FC<Props> = ({ url, name }) => {
           display: "block",
           position: "relative",
           width: "100%",
-          height: "350px",
+          height: "375px",
           overflow: "hidden",
           transition: "all 0.7s linear",
         }}
@@ -32,18 +34,28 @@ const CardProduct: FC<Props> = ({ url, name }) => {
           fill
           style={{
             objectFit: "cover",
+            objectPosition: "top right",
           }}
         />
       </Box>
-      <Typography
-        variant="subtitle2"
-        sx={{
-          mt: 1,
-          textAlign: "center",
-        }}
+      <Box
+        display="flex"
+        justifyContent="space-between"
+        alignItems="center"
+        py={1.5}
+        px={3}
       >
-        {name}
-      </Typography>
+        <Typography variant="subtitle2">{name}</Typography>
+        <Typography
+          variant="subtitle1"
+          sx={{
+            color: "primary.main",
+            fontWeight: 600,
+          }}
+        >
+          {currency.format(price)}
+        </Typography>
+      </Box>
     </Box>
   );
 };

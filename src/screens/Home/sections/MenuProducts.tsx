@@ -61,7 +61,11 @@ const Menu = () => {
           {menuFilteredByCategory(menu, categorySelected).map(
             (product, index) => (
               <Grid item xs={12} sm={6} md={4} key={index}>
-                <CardProduct name={product.name} url={product.url} />
+                <CardProduct
+                  name={product.name}
+                  url={product.url}
+                  price={product.price}
+                />
               </Grid>
             )
           )}

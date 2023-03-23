@@ -12,6 +12,7 @@ const breakfastsCategory: IProductCategory = {
   name: "Desayunos",
 };
 const bowlsCategory: IProductCategory = { id: "bowls", name: "Bowls" };
+const drinksCategory: IProductCategory = { id: "drinks", name: "Bedidas" };
 const dessertFitCategory: IProductCategory = {
   id: "dessertFit",
   name: "Postres",
@@ -19,60 +20,81 @@ const dessertFitCategory: IProductCategory = {
 
 export const menu: IProduct[] = [
   {
-    url: "/images/bowl-cereales-fit.jpg",
-    name: "Bowl de cererales fit",
-    categories: [breakfastsCategory, bowlsCategory],
-  },
-  {
     url: "/images/brownie-fitba.jpg",
-    name: "Brownie fit",
+    name: "Brownie FITBA",
+    price: 3.2,
     categories: [dessertFitCategory],
   },
   {
-    url: "/images/burritos-fit.jpg",
-    name: "Burritos fit",
+    url: "/images/burrito-fit.jpg",
+    name: "Burrito fit",
+    price: 3.5,
     categories: [mexicanCategory],
   },
   {
+    url: "/images/french-toast-fit.jpg",
+    name: "French toast fit",
+    price: 4.5,
+    categories: [dessertFitCategory],
+  },
+  {
     url: "/images/french-toast.jpg",
-    name: "French toast",
+    name: "French toast fit 2",
+    price: 4.5,
     categories: [dessertFitCategory],
   },
   {
     url: "/images/bolon-fit.jpg",
     name: "Bolón fit",
+    price: 2.0,
     categories: [ecuadorianCategory],
   },
   {
-    url: "/images/lasana-fit.jpg",
-    name: "Lasaña fit",
+    url: "/images/lasagna-fit.jpg",
+    name: "Lasagna fit",
+    price: 4.0,
     categories: [italianCategory],
   },
   {
-    url: "/images/majado-fit.jpg",
-    name: "Majado fit",
-    categories: [ecuadorianCategory, breakfastsCategory],
+    url: "/images/manzana-cake.jpg",
+    name: "Manzana cake",
+    price: 3.0,
+    categories: [dessertFitCategory],
   },
-
+  {
+    url: "/images/oat-bowls.jpg",
+    name: "Oat bowls",
+    price: 4.0,
+    categories: [bowlsCategory],
+  },
+  {
+    url: "/images/shakes-fit.jpg",
+    name: "Shakes fit",
+    price: 3.5,
+    categories: [drinksCategory],
+  },
   {
     url: "/images/nachos-fit.jpg",
     name: "Nachos fit",
+    price: 4,
     categories: [mexicanCategory],
   },
-
   {
     url: "/images/pizza-fit.jpg",
     name: "Pizza fit",
+    price: 3.6,
     categories: [italianCategory, fastFitCategory],
   },
   {
     url: "/images/tacos-fit.jpg",
     name: "Tacos fit",
+    price: 3,
     categories: [mexicanCategory],
   },
   {
-    url: "/images/alitas.jpg",
-    name: "Alitas",
+    url: "/images/alitas-fit.jpg",
+    name: "Alitas fit",
+    price: 5,
     categories: [fastFitCategory],
   },
 ];

@@ -6,5 +6,6 @@ export interface IProductCategory {
 export interface IProduct {
   url: string;
   name: string;
+  price: number;
   categories: IProductCategory[];
 }
