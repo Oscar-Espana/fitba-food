@@ -12,8 +12,8 @@ const Hero = () => {
       }}
     >
       <Image
-        src="/images/nachos-fit.jpg"
-        alt="Pizzas FIT"
+        src="/images/nachos.jpg"
+        alt="Nachos FITBA"
         fill
         style={{
           objectFit: "cover",
