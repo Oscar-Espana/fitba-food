@@ -18,11 +18,11 @@ const poppins = Poppins({
 });
 
 export default function App({ Component, pageProps }: AppProps) {
-  const [loaded, setLoaded] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
-      setLoaded(true);
+      setIsLoading(false);
     }, 1250);
   }, []);
 
@@ -36,7 +36,7 @@ export default function App({ Component, pageProps }: AppProps) {
       `}</style>
       <ThemeProvider theme={lightTheme}>
         <CssBaseline />
-        <AnimatePresence>{loaded ? null : <Loader />}</AnimatePresence>
+        <AnimatePresence>{isLoading ? <Loader /> : null}</AnimatePresence>
         <Component {...pageProps} />
       </ThemeProvider>
     </>
