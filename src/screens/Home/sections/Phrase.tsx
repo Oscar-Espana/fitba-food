@@ -20,15 +20,27 @@ const Phrase = () => {
         <Grid
           container
           spacing={{
-            xs: 2,
-            md: 4,
+            xs: 4,
             lg: 8,
           }}
         >
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={6} md={4}>
+            <Typography
+              component="h2"
+              variant="h3"
+              sx={{
+                mb: 3,
+                fontFamily: "var(--Poppins)",
+                fontWeight: 500,
+                color: "primary.main",
+                textAlign: "center",
+              }}
+            >
+              La comida es medicina
+            </Typography>
             <Typography
               sx={{
-                fontSize: "32px",
+                fontSize: "24px",
                 letterSpacing: "-0.5px",
                 textAlign: {
                   xs: "center",
@@ -36,10 +48,32 @@ const Phrase = () => {
                 },
               }}
             >
-              {`"Que la comida sea tu medicina y la medicina sea tu comida."`}
+              {`"Tu cuerpo cada día lucha para proteger tu corazón y alma, no la dañes.`}
+            </Typography>
+            <Typography
+              sx={{
+                mt: 1,
+                fontSize: "24px",
+                letterSpacing: "-0.5px",
+                textAlign: {
+                  xs: "center",
+                  md: "left",
+                },
+              }}
+            >
+              {`Ámalo en un futuro lo agradecerás"`}
+            </Typography>
+            <Typography
+              variant="body1"
+              sx={{
+                mt: 3,
+                textAlign: "right",
+              }}
+            >
+              Fitness&balance
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={8}>
+          <Grid item xs={12} sm={6} md={8}>
             <Box
               component="picture"
               sx={{
@@ -52,10 +86,10 @@ const Phrase = () => {
               }}
             >
               <Image
-                quality={85}
+                quality={90}
                 className="healty-food"
-                src="/images/comida-saludable.jpg"
-                alt="pizzas"
+                src="/images/majado-fitba.jpg"
+                alt="majado fit"
                 fill
                 style={{
                   objectFit: "cover",
