@@ -38,12 +38,6 @@ export const menu: IProduct[] = [
     categories: [dessertFitCategory],
   },
   {
-    url: "/images/french-toast.jpg",
-    name: "French toast fit 2",
-    price: 4.5,
-    categories: [dessertFitCategory],
-  },
-  {
     url: "/images/bolon-fit.jpg",
     name: "Bolón fit",
     price: 2.0,
@@ -96,5 +90,29 @@ export const menu: IProduct[] = [
     name: "Alitas fit",
     price: 5,
     categories: [fastFitCategory],
+  },
+  {
+    url: "/images/majado-fit.jpg",
+    name: "Majado fit",
+    price: 3.6,
+    categories: [ecuadorianCategory, breakfastsCategory],
+  },
+  {
+    url: "/images/hamburguesa-fit.jpg",
+    name: "Hamburguesa fit",
+    price: 3.6,
+    categories: [fastFitCategory],
+  },
+  {
+    url: "/images/sandwich-fit.jpg",
+    name: "Sandwich fit",
+    price: 2.8,
+    categories: [ecuadorianCategory, breakfastsCategory],
+  },
+  {
+    url: "/images/zanahoria-cake.jpg",
+    name: "Zanahoria cake",
+    price: 3,
+    categories: [dessertFitCategory],
   },
 ];
