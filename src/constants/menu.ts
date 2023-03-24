@@ -56,18 +56,6 @@ export const menu: IProduct[] = [
     categories: [dessertFitCategory],
   },
   {
-    url: "/images/oat-bowls.jpg",
-    name: "Oat bowls",
-    price: 4.0,
-    categories: [bowlsCategory],
-  },
-  {
-    url: "/images/shakes-fit.jpg",
-    name: "Shakes fit",
-    price: 3.5,
-    categories: [drinksCategory],
-  },
-  {
     url: "/images/nachos-fit.jpg",
     name: "Nachos fit",
     price: 4,
@@ -114,5 +102,37 @@ export const menu: IProduct[] = [
     name: "Zanahoria cake",
     price: 3,
     categories: [dessertFitCategory],
+  },
+  {
+    url: "/images/shakes-fit.jpg",
+    name: "Protein Milkshake",
+    price: 3.5,
+    categories: [drinksCategory],
+    variants: [
+      {
+        name: "Protein Smoothie",
+        price: 3.0,
+      },
+    ],
+  },
+  {
+    url: "/images/oat-bowls.jpg",
+    name: "Protein bowl",
+    price: 4.5,
+    categories: [bowlsCategory],
+    variants: [
+      {
+        name: "Bowl de avena de proteína",
+        price: 4.0,
+      },
+      {
+        name: "Cinnamon Bowl",
+        price: 3.0,
+      },
+      {
+        name: "Bowl de Chocolate",
+        price: 3.2,
+      },
+    ],
   },
 ];

@@ -1,22 +1,16 @@
+import { IProduct } from "@/intertafaces";
 import { currency } from "@/utils";
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 import React, { FC } from "react";
 
 interface Props {
-  url: string;
-  name: string;
-  price: number;
+  product: IProduct;
 }
 
-const CardProduct: FC<Props> = ({ url, name, price }) => {
+const CardProduct: FC<Props> = ({ product }) => {
   return (
-    <Box
-      aria-label="card-product"
-      sx={{
-        background: "#fafafa",
-      }}
-    >
+    <Box aria-label="card-product">
       <Box
         component="picture"
         sx={{
@@ -29,8 +23,8 @@ const CardProduct: FC<Props> = ({ url, name, price }) => {
         }}
       >
         <Image
-          src={url}
-          alt={name}
+          src={product.url}
+          alt={product.name}
           fill
           style={{
             objectFit: "cover",
@@ -39,23 +33,50 @@ const CardProduct: FC<Props> = ({ url, name, price }) => {
         />
       </Box>
       <Box
-        display="flex"
-        justifyContent="space-between"
-        alignItems="center"
-        py={1.5}
-        px={3}
+        sx={{
+          background: "#fafafa",
+          py: 1.5,
+        }}
       >
-        <Typography variant="subtitle2">{name}</Typography>
-        <Typography
-          variant="subtitle1"
-          sx={{
-            color: "primary.main",
-            fontWeight: 600,
-          }}
-        >
-          {currency.format(price)}
-        </Typography>
+        <DetailProduct name={product.name} price={product.price} />
+        {product.variants?.map((variant, index) => (
+          <DetailProduct
+            key={index}
+            name={variant.name}
+            price={variant.price}
+          />
+        ))}
       </Box>
+    </Box>
+  );
+};
+
+const DetailProduct = ({ name, price }: { name: string; price: number }) => {
+  return (
+    <Box
+      display="flex"
+      justifyContent="space-between"
+      alignItems="center"
+      gap={1.5}
+      px={2.5}
+    >
+      <Typography
+        variant="body1"
+        sx={{
+          fontWeight: 500,
+        }}
+      >
+        {name}
+      </Typography>
+      <Typography
+        variant="subtitle1"
+        sx={{
+          color: "primary.main",
+          fontWeight: 600,
+        }}
+      >
+        {currency.format(price)}
+      </Typography>
     </Box>
   );
 };
