@@ -17,7 +17,7 @@ const Loader = () => {
         overflow: "hidden",
         width: "100vw",
         height: "100vh",
-        zIndex: 10,
+        zIndex: 10000000,
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
